@@ -1,6 +1,6 @@
-# My cool website
+# My cool RGB Game
 
-This file describes your project to the community. What's your cool website about? What makes it special?
+Play with colors. Learn RGB combinations along the way !
 
 ヽ(๏∀๏ )ﾉ
 
