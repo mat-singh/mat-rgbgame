@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RGB Color Game</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h2>GUESS THE</h2>
+    <h2><span id="color-display">RGB(211, 206, 13)</span> COLOR</h2>
+<!--     <h2>GUESSING GAME</h2> -->
+    <!-- 	<pre><span id="new">NEW GAME</span>               <span id="message">          </span>        <span id="easy">EASY</span> <span id="hard">HARD</span></pre> -->	
+    <p>
+      <span id="new">NEW GAME</span>
+      <span id="msg">Welcome to RGB Game!</span>        
+      <span id="easy">EASY</span> 
+      <span id="hard">HARD</span>
+    </p>
+
+    <div id="strip">
+      <button id="newbtn">COLORS <i class="fas fa-sync"></i> </button> 
+      <span id="message">Welcome!</span>
+      <button id="easybtn">EASY</button>
+      <button id="hardbtn">HARD</button>
+    </div>
+    <div id="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  </body>
+</html>

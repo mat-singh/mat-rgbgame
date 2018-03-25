@@ -1,0 +1,79 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	background-color: #232323;
+	color: white;
+	margin: 0px;			/* To get rid of empty pixels between body/h, body/pre, etc */
+}
+h2 {
+	background-color: rgb(16, 94, 108);		/* rgb(15, 200, 200) */
+	font-weight: normal;
+	margin: 0px;				/* To get rid of empty pixels between h2 lines */
+}
+#color-display {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+pre {						/* pre is fixed and hence doesnt give flexibility. Hence commented out in html */
+	margin: 0px;
+	padding-top: 5px;		/* To make the strip little bigger */
+	font-size: 20px;
+	background-color: white;
+	color: rgb(16, 94, 108);
+}
+p {							/* More work to give hover effect. Hence display set to none  for this */
+	margin: 0px;
+	padding-top: 5px;		/* To make the strip little bigger */
+	font-size: 20px;
+	background-color: white;
+	color: rgb(16, 94, 108);
+	display: none;
+}
+#strip {
+	margin: 0px;
+/* 	height: 35px; */
+	background-color: white;
+	color: rgb(16, 94, 108);
+/*   white-space: nowrap;     if you dont want the text to be wrapped to form new line */
+}
+#message {
+	color: #232323;
+	display: inline-block;   			/* fits inline but accepts certain block properties. In this case, 'width' */
+	width: 35%;							    /* so that it always takes 25% of the container width */
+}
+button {
+	border: none;
+	background: none;
+	height: 100%;						/* so that background color, hover effect, etc covers entirely */
+	/*font-weight: 700;*/
+	color: rgb(16, 94, 108);
+	letter-spacing: 1px;
+	font-size: smaller;   /* inherit */
+	transition: all 0.3s;      /* For all transitions*/
+  padding: 5px 0px;
+	outline: none;						/* To avoid the blue border after clicking buttons */
+	-webkit-transition: all 0.3s;		/* other browsers support: safari */
+	-moz-transition: all 0.3s;			/* other browsers support: firefox */
+}
+button:hover {
+	color: white;
+	cursor: pointer;
+	background-color: rgb(16, 94, 108);
+}
+.square {
+	width: 30%;				    /* so that only 3 squares are displayed per row */
+	padding-bottom: 30%;	/* 30% of the enclosing #container*/
+	border-radius: 25px;	/* for teh curve effect */
+	float:left;				    /* All square divs will be floated */
+	background-color: #232323;
+	margin: 1.66%;
+	transition: background 0.6s;	/* Any background change will use 0.6 seconds */
+}
+#container {
+	margin: 0 auto;		  /* top,bottom=0; left,right=auto*/
+	max-width: 600px;		/* define the max widths occupied by 3 squares*/
+}
+.selected-level {
+	background-color: rgb(16, 94, 108);
+	color: white; 
+}
